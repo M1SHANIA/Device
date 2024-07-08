@@ -31,16 +31,16 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Обновлено */
 }
-
 .device-option:hover {
   background-color: #505050;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(253, 253, 253, 0.2);
 }
-
 .device-option img {
   width: 100px;
   height: 100px;

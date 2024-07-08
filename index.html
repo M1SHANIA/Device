@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Your Device</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select your device</h1>
+      <div class="device-selection">
+        <div
+          class="device-option"
+          id="android"
+          onclick="navigateTo('https://www.android.com/')"
+        >
+          <img src="img/android.png" alt="Android logo" />
+          <p>Android</p>
+        </div>
+        <div
+          class="device-option"
+          id="ios"
+          onclick="navigateTo('https://www.apple.com/ios/')"
+        >
+          <img src="img/apple.png" alt="iOS logo" />
+          <p>iOS</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>
